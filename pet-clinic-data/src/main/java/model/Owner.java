@@ -1,4 +1,4 @@
-package com.bishoptod3.springpetclinic.model;
+package model;
 
 /**
  * Created by Loky on 02/08/2018.

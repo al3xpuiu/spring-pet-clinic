@@ -1,4 +1,4 @@
-package com.bishoptod3.springpetclinic.model;
+package model;
 
 import java.time.LocalDate;
 
