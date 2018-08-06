@@ -4,7 +4,7 @@
 
 	<groupId>com.bishoptod3</groupId>
 	<artifactId>spring-pet-clinic</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<modules>
 		<module>pet-clinic-data</module>
 		<module>pet-clinic-web</module>
@@ -57,7 +57,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/al3xpuiu/spring-pet-clinic.git</developerConnection>
-		<tag>0.0.3</tag>
+		<tag>0.0.2</tag>
 	</scm>
 
 
