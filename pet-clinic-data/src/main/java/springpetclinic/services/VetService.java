@@ -1,6 +1,6 @@
-package services;
+package springpetclinic.services;
 
-import model.Vet;
+import springpetclinic.model.Vet;
 
 /**
  * Created by Loky on 06/08/2018.

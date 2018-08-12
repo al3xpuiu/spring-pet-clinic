@@ -1,6 +1,6 @@
-package services.map;
+package springpetclinic.services.map;
 
-import services.CrudService;
+import springpetclinic.services.CrudService;
 
 import java.util.HashMap;
 import java.util.HashSet;

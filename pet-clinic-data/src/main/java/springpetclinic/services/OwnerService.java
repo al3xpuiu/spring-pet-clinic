@@ -1,6 +1,6 @@
-package services;
+package springpetclinic.services;
 
-import model.Owner;
+import springpetclinic.model.Owner;
 
 import java.util.Set;
 

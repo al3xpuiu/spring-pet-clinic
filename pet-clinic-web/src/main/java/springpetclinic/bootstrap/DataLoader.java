@@ -1,13 +1,12 @@
 package springpetclinic.bootstrap;
 
-import model.Owner;
-import model.Vet;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import services.OwnerService;
-import services.VetService;
-import services.map.OwnerServiceMap;
-import services.map.VetServiceMap;
+import springpetclinic.model.Owner;
+import springpetclinic.model.Vet;
+import springpetclinic.services.OwnerService;
+import springpetclinic.services.VetService;
 
 /**
  * Created by Loky on 12/08/2018.
@@ -18,10 +17,10 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    @Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

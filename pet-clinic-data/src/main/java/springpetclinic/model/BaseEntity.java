@@ -1,4 +1,4 @@
-package model;
+package springpetclinic.model;
 
 /**
  * Created by Loky on 06/08/2018.

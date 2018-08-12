@@ -1,7 +1,8 @@
-package services.map;
+package springpetclinic.services.map;
 
-import model.Owner;
-import services.OwnerService;
+import org.springframework.stereotype.Service;
+import springpetclinic.model.Owner;
+import springpetclinic.services.OwnerService;
 
 import java.util.HashSet;
 import java.util.Map;
@@ -11,6 +12,7 @@ import java.util.stream.Collectors;
 /**
  * Created by Loky on 08/08/2018.
  */
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
