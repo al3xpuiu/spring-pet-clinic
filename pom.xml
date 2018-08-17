@@ -12,7 +12,7 @@
 
 	<packaging>pom</packaging>
 
-	<name>spring-pet-clinic</name>
+	<description>spring-pet-clinic</description>
 	<description>Spring Boot Pet Clinic Project</description>
 
 	<parent>

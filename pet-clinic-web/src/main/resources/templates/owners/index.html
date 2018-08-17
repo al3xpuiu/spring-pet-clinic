@@ -11,15 +11,15 @@
         <thead>
         <tr>
             <th style="width: 150px;">Id</th>
-            <th style="width: 150px;">First name</th>
-            <th style="width: 150px;">Last name</th>
+            <th style="width: 150px;">First description</th>
+            <th style="width: 150px;">Last description</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="owner : ${ownersCollection}">
             <td th:text="${owner.id}">Id</td>
-            <td th:text="${owner.firstName}">First name</td>
-            <td th:text="${owner.lastName}">Last name</td>
+            <td th:text="${owner.firstName}">First description</td>
+            <td th:text="${owner.lastName}">Last description</td>
         </tr>
         </tbody>
     </table>
