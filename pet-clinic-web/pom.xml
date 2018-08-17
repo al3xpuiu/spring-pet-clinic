@@ -66,6 +66,7 @@
             <version>${webjars-bootstrap.version}</version>
         </dependency>
         <!-- end of webjars -->
+
     </dependencies>
 
     <build>
