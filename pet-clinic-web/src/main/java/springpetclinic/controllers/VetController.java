@@ -9,7 +9,7 @@ import springpetclinic.services.VetService;
 /**
  * Created by Loky on 08/08/2018.
  */
-@RequestMapping("/vets")
+@RequestMapping({"/vets", "/vets.html"})
 @Controller
 public class VetController {
 
@@ -20,7 +20,7 @@ public class VetController {
         this.vetService = vetService;
     }
 
-    @RequestMapping({"", "/", "/index", "/index.html"})
+    @RequestMapping({"", "/"})
     public String listVets(Model model) {
 
         model.addAttribute( "vetsCollection", vetService.findAll() );
