@@ -24,7 +24,11 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
             if (obj.getId() == null) {
                 obj.setId( getNextId() );
             }
-            map.put( obj.getId(), obj );
+            if(!map.containsKey( obj.getId() )) {
+                map.put( obj.getId(), obj );
+            } else {
+                throw new IllegalArgumentException( "Map already contains the key" );
+            }
         } else {
             throw new IllegalArgumentException( "Object must not be null" );
         }
