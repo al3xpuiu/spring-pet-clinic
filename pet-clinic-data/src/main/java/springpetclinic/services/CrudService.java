@@ -1,6 +1,5 @@
 package springpetclinic.services;
 
-
 import springpetclinic.model.BaseEntity;
 
 import java.util.Set;
