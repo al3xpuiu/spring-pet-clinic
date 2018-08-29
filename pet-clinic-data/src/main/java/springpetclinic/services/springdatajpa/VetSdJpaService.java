@@ -1,6 +1,7 @@
 package springpetclinic.services.springdatajpa;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import springpetclinic.model.Vet;
 import springpetclinic.repositories.VetRepository;
@@ -13,6 +14,7 @@ import java.util.Set;
  * Created by Loky on 29/08/2018.
  */
 @Service
+@Profile( "springdatajpa" )
 public class VetSdJpaService implements VetService {
 
     private VetRepository vetRepository;
