@@ -70,8 +70,8 @@ public class DataLoader implements CommandLineRunner {
         visit.setDate( LocalDate.now() );
         visit.setDescription( "Cold nose" );
 
-        petService.save( pet );
         ownerService.save( owner );
+        petService.save( pet );
         visitService.save( visit );
 
         //Owner 1 + pet + visit  - end
@@ -90,8 +90,8 @@ public class DataLoader implements CommandLineRunner {
         pet.setOwner( owner );
         owner.getPets().add( pet );
 
-        petService.save( pet );
         ownerService.save( owner );
+        petService.save( pet );
         //Owner 2 - end
 
         //Specialities - start
