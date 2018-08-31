@@ -1,13 +1,26 @@
 package springpetclinic.model;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
 /**
  * Created by Loky on 02/08/2018.
  */
+@NoArgsConstructor
+@Data
+@EqualsAndHashCode(callSuper = false)
 @MappedSuperclass
 public class Person extends BaseEntity{
+
+    public Person(Long id, String firstName, String lastName) {
+        super( id );
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     @Column(name = "first_name")
     private String firstName;
@@ -15,19 +28,4 @@ public class Person extends BaseEntity{
     @Column(name = "last_name")
     private String lastName;
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 }
